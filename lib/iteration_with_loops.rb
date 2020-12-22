@@ -7,7 +7,7 @@ def join_nested_strings(src)
   while row_index < src.length do
     column_index = 0 
     while column_index < src[row_index].length do
-      if 
+      if src[row_index][column_index].is_a?(String)
       all_arr << src[row_index][column_index]
       column_index += 1
     end
